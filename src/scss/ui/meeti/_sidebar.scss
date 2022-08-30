@@ -1,0 +1,28 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.side {
+    grid-column: 3 / 4;
+    &__mapa-imagen {
+        width: 100%;
+    }
+
+    &__texto {
+        background-color: v.$secundario;
+        padding: 2rem;
+        color: v.$blanco;
+        text-align: center;
+    }
+
+    &__titulo {
+        margin-bottom: 2rem;
+    }
+
+    &__registro-lista {
+        margin-bottom: 2rem;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}

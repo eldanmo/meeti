@@ -1,0 +1,20 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.meeti {
+    &__heading {
+        text-align: center;
+        color: v.$gris;
+        margin: 5rem 0;
+    }
+
+    &__grid {
+        @include m.tablet {
+            @include m.grid(3, 2rem);   
+        } 
+    }
+
+    &__informacion {
+        grid-column: 1 / 3;
+    }
+}
